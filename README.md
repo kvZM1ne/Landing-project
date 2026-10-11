@@ -1,6 +1,6 @@
 # Archmove - Landing Page
 
-## English Version
+## English
 
 ### Description
 A responsive landing page concept for an architectural and project management company. This repository was created as a practical project to master semantic HTML layout and CSS structure.
@@ -10,7 +10,7 @@ This project is open-source software licensed under the GNU General Public Licen
 
 ---
 
-## Беларуская версія
+## Беларуская
 
 ### Апісанне
 Канцэпт мэтавай старонкі (landing page) для архітэктурнай кампаніі. Гэты рэпазіторый створаны як практычны праект для асваення семантычнай вёрсткі на HTML і структуравання CSS.
