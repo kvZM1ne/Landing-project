@@ -1,0 +1,220 @@
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+}
+
+.menu-close {
+    display: none;
+    align-self: flex-end;
+    border: none;
+
+}
+
+@media (max-width: 1080px) {
+    .burger {
+        display: flex;
+    }
+
+    .header-nav {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 250px;
+        min-width: 100vh;
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        background: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-nav.active {
+        display: flex;
+    }
+
+    .menu-close {
+        display: block;
+    }
+
+    .header-nav-auth {
+        display: none;
+    }
+}
+
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+
+p, button, a {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+button {
+    transition: background-color 0.2s ease, transform 0.1s ease, opacity 0.2s ease;
+}
+
+header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 136px;
+    letter-spacing: 0.01em;
+}
+
+.header-nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    gap: 24px;
+}
+
+.header-nav a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #2C2C2C;
+    font-size: 14px;
+}
+
+.header-nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.sign-in-button {
+    height: 48px;
+    background: none;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #2C2C2C;
+}
+
+.sign-in-button:hover {
+    opacity: 0.7; 
+}
+
+.sign-in-button:active {
+    opacity: 1;
+    color: #000000;
+}
+
+.sign-up-button {
+    padding: 4px 24px;
+    height: 48px;
+    border-radius: 4px;
+    background: #FD665E;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    
+}
+
+.sign-up-button:hover {
+    background: #E0533E;
+}
+
+.sign-up-button:active {
+    opacity: 0.7;
+}
+
+.searh-ico {
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+}
+
+.header-logo {
+    width: 61px;
+    height: 28px;
+    margin-right: 40px;
+}
+
+.hero-title {
+    margin: 64px 136px;
+    font-size: 96px;
+    font-style: bold;
+    color: #000000;
+}
+
+.hero-title span {
+    color: #FD665E;
+}
+
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 64px 136px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.hero-button {
+    padding: 8px 32px;
+    height: 56px;
+    border-radius: 4px;
+    background: #FD665E;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.hero-button:hover {
+    background: #E0533E;
+}
+
+.hero-button:active {
+    opacity: 0.7;
+}
+
+.gallery-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.24;
+}
+
+.gallery-title-wrapper {
+    margin: 80px 136px 40px 136px;
+    display: flex;
+    justify-content: space-between;
+}
+
