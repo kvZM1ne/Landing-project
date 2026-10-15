@@ -10,12 +10,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arch move - Main</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header-nav-menu">
-            <img src="img/logo-arch.svg" alt="logo">
+            <a href="#">
+                <img src="img/logo-arch.svg" alt="logo" class="header-logo">
+            </a>
+
+            <button class="burger" id="burger" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <nav class="header-nav">
+                <button class="menu-close" id="close-menu" aria-label="Close Menu">
+                    &times;
+                </button>
                 <a href="#">How it Works</a>
                 <a href="#">Design Gallery</a>
                 <a href="#">Architects</a>
@@ -23,14 +41,14 @@
             </nav>
         </div>
         <div class="header-nav-auth">
-            <img src="img/ico-searh.svg" alt="searh ico">
+            <img src="img/ico-searh.svg" alt="searh ico" class="searh-ico">
             <button class="sign-in-button">Sign In</button>
             <button class="sign-up-button">Sign Up</button>
         </div>
     </header>
     <main>
         <section class="hero-section">
-            <h1 class="hero-title">Build Your<br>Dream House</h1>
+            <h1 class="hero-title">Build Your<br>Dream <span>House</span></h1>
             <div class="hero-wrapper">
                 <div class="hero-content">
                     <p>100% guaranteed build safe,<br>comfortable and transparent with a<br>project management for the best result</p>
@@ -120,6 +138,12 @@
                 <button class="cta-button">FREE CONSULTATION</button>
             </div>
         </section>
+        <section class="form-section">
+            <form>
+                <input class="form-input" type="text" name="FirstName" placeholder="Write Name">
+                <button value="submit">Send</button>
+            </form>
+        </section>
         <section class="partmer-section">
             <h2>Our Partners</h2>
             <div class="partmer-logos">
@@ -144,5 +168,7 @@
             <img src="img/logo-arch.svg" alt="logo">
         </div>
     </footer>
+    <!-- <script src=""></script> -->
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
